@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-21T12:43:02 IST" name="Default suite" finished-at="2023-12-21T12:43:53 IST" duration-ms="51000">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ScryAIGroundX.com.qa.runner.ForgotPasswordRunner@37883b97]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-21T12:43:02 IST" name="Default test" finished-at="2023-12-21T12:43:53 IST" duration-ms="51000">
+      <class name="ScryAIGroundX.com.qa.runner.ForgotPasswordRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ScryAIGroundX.com.qa.runner.ForgotPasswordRunner@37883b97]" started-at="2023-12-21T12:43:02 IST" name="setUpClass" finished-at="2023-12-21T12:43:03 IST" duration-ms="725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@148b6f95]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ScryAIGroundX.com.qa.runner.ForgotPasswordRunner@37883b97]" started-at="2023-12-21T12:43:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-21T12:43:23 IST" duration-ms="20007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate forgor password page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Forgot Password Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ScryAIGroundX.com.qa.runner.ForgotPasswordRunner@37883b97]" started-at="2023-12-21T12:43:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-21T12:43:42 IST" duration-ms="19393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate email warning message with valid email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Forgot Password Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ScryAIGroundX.com.qa.runner.ForgotPasswordRunner@37883b97]" started-at="2023-12-21T12:43:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-21T12:43:51 IST" duration-ms="9381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate email warning message with invalid email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Forgot Password Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:ScryAIGroundX.com.qa.runner.ForgotPasswordRunner@37883b97]" started-at="2023-12-21T12:43:51 IST" name="tearDownClass" finished-at="2023-12-21T12:43:53 IST" duration-ms="1459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- ScryAIGroundX.com.qa.runner.ForgotPasswordRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

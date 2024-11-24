@@ -1,0 +1,56 @@
+environment = production
+
+browser=chrome
+
+browserMode = headless*
+
+url= https://uatgroundx.neom.com/login
+
+Login_as_an_external_partner_or_vendor_UserName= rililel420@quipas.com
+Login_as_an_external_partner_or_vendor_Password= Test@12345
+
+External_User_UserName = rililel420@quipas.com
+External_User_Password = Test@12345
+
+Drone_Operator_UserName = rililel420@quipas.com
+Drone_Operator_Password = Test@12345
+
+Drone_Operator1_UserName = ronexof647@nmaller.com
+Drone_Operator1_Password = Test@12345
+
+Drone_Operator2_UserName = jemesi4956@royalka.com
+Drone_Operator2_Password = Test@12345
+
+Drone_Operator3_UserName = jevaki7074@tiuas.com
+Drone_Operator3_Password = Test@12345
+
+Drone_Operator4_UserName = kikaxi4386@v1zw.com
+Drone_Operator4_Password = Test@12345
+
+Drone_Operator5_UserName = sokixi6887@giratex.com
+Drone_Operator5_Password = Test@12345
+fekodo7302@viperace.com
+
+External_User1_UserName = rililel420@quipas.com
+External_User1_Password = Test@12345
+
+External_User2_UserName = jowites302@wenkuu.com
+External_User2_Password = 12345678
+
+External_User3_UserName = jowites302@wenkuu.com
+External_User3_Password = 12345678
+
+External_User4_UserName = capopal279@apxby.com
+External_User4_Password = Test@12345
+
+External_User5_UserName = sedak85639@horsgit.com
+External_User5_Password = Test@12345
+
+External_User6_UserName = witinig247@dixiser.com
+External_User6_Password = Test@12345
+
+User_With_Broader_Access4_UserName = capopal279@apxby.com
+User_With_Broader_Access4_Password = Test@12345
+
+Internal_User_UserName = groundxtester3@neom.com
+Internal_User_Password = QCrst!268@f12

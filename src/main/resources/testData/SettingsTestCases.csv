@@ -1,0 +1,32 @@
+Test Case Name,DeviceType,DeviceStatus
+GC01_ GX-5880_UAT_List View_Check when user is trying to copy installation ID,,
+GC03_GX-5880_UAT_List View_User is trying to Edit device,,
+GC04_GX-5880_UAT_List View_check when user tries to delete device,,
+GC05_GX-5880_UAT_List View_Try to filter with 360,360,
+GC06_GX-5880_UAT_List View_Try to filter with Drone,Drone,
+GC07_GX-5880_UAT_List View_Try to filter with Live,Live,
+GC08_GX-5880_UAT_List View_Try to filter with Timelapse,Timelapse,
+GC09_GX-5880_UAT_List View_Try to filter with Underwater,Underwater,
+GC10_GX-5880_UAT_List View_Try to filter with Weather,Weather,
+GC11_GX-5880_UAT_List_View_Try_to_hovering_for_online_devices,Drone,Online
+GC12_GX-5880_UAT_Grid_View_Check when user is trying to copy installation ID,,
+GC13_GX-5880_UAT_Grid_View_User is trying to Edit device without filter,,
+GC14_GX-5880_UAT_Grid_View_User is trying to Edit device with status Online,,Online
+GC15_GX-5880_UAT_Grid_View_User is trying to Edit device with status Offline,,Offline
+GC16_GX-5880_UAT_Grid_View_User is trying to Edit device with status Registered,,Registered
+GC17_GX-5880_UAT_Grid_View_User is trying to Edit device with status Decommissioned,,Decommissioned
+GC18_GX-5880_UAT_Grid View_check when user tries to delete device,,
+BC01_GX-5880_UAT_Grid View_check_that_delete_is_not_exist_with_Online,,Online
+BC02_GX-5880_UAT_Grid View_check_that_delete_is_not_exist_with Offline,,Offline
+BC03_GX-5880_UAT_Grid View_check_that_delete_is_not_exist_with_Decommissioned,,Decommissioned
+BC04_GX-5880_UAT_List_View_check_that_delete_is_not_exist_with_Online,,Online
+BC05_GX-5880_UAT_List_View_check_that_delete_is_not_exist_with_Offline,,Offline
+BC06_GX-5880_UAT_List_View_check_that_delete_is_not_exist_with_Decommissioned,,Decommissioned
+GC19_GX-5880_UAT_Grid View_check that offline devices displayed with date,,Offline
+GC20_GX-5880_UAT_Grid View_press on view button for Online Devices,,Online
+GC21_GX-5880_UAT_Grid View_press on view button for Offline Devices,,Offline
+GC22_GX-5880_UAT_Grid View_press on view button for Decommissioned Devices,,Decommissioned
+GC23_GX-5880_UAT_Grid View_Verify View button is dimmed with registered status,,Registered
+GC24_GX-5880_UAT_Grid View_check that online devices displayed with date,,Online
+GC25_GX-5880_UAT_Grid View_check that registered devices displayed with date,,Registered
+GC26_GX-5880_UAT_Grid View_check that Decommissioned devices displayed with date,,Decommissioned

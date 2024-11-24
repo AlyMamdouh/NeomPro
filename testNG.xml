@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Construction Footage">
+	<listeners>
+		<listener class-name="ScryAIGroundX.com.qa.reports.Reports"></listener>
+	</listeners>
+	
+    <test name="Functional Tests" preserve-order="true">
+        <classes>
+            <class name="ScryAIGroundX.com.qa.runner.LoginRunner"/>
+            <class name="ScryAIGroundX.com.qa.runner.ForgotPasswordRunner"/>
+            <class name="ScryAIGroundX.com.qa.runner.ConstructionFootageRunner"/>
+        </classes>       
+    </test>
+</suite>

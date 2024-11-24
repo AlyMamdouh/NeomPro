@@ -1,0 +1,4 @@
+Test Case Name,UserName,Password
+TC01_Login,srikanth.mallela@scryai.com,Test@123456
+TC02_Login,srikanth.mallela2@scryai.com,Simeio@123
+TC05_Login as external user,srikanth.mallela2@scryai.com,Simeio@123

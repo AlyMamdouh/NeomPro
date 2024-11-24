@@ -1,0 +1,30 @@
+Test Case Name,Filter,Region,SubArea,DeviceID,DeviceType,Format,DateRange,Date,Path,Classification,UploadFiles
+TC01_Drone operator filter with region,Region,OXAGON,,,,,7/3/2023-8/10/2023,,,,
+TC02_Drone operator filter with subArea,SubArea,,Port Basin,,,,,,,,
+TC03_Drone operator filter with deviceID,DeviceID,,,D-OX-0037,,,,,,,
+TC04_Drone operator filter with deviceType,DeviceType,,,,Drone,,,,,,
+TC05_Drone operator filter with format,Format,,,,,Video,,,,,
+TC06_Drone operator filter with date,DateRange,,,,,,7/3/2023-8/10/2023,,,,
+TC07_Drone operator upload assets .doc from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.doc
+TC08_Drone operator upload assets .txt from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.txt
+TC09_Drone operator upload assets .pdf from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.pdf
+TC10_Drone operator upload assets .xls from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.xls
+TC11_Drone operator upload assets .jpg from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.jpg
+TC12_Drone operator upload assets .gif from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.gif
+TC13_Drone operator upload assets .png from construction footage page,,,,D-OX-0054,,,,7/18/2023,,,Uploads1.png
+TC14_Drone operator upload assets .SRT from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.SRT
+TC15_Drone operator upload large assets from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.doc
+TC16_Drone operator upload assets with minimum size from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.doc
+TC17_Drone operator upload assets with maximum size from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.doc
+TC18_Drone operator upload assets from workspace,,,,D-OX-0037,,,,7/18/2023,LockedFolder3,External,Uploads1.DNG;Uploads1.SRT
+TC19_Drone operator validates assets uploaded by self,,,,,,,,,,,
+TC20_Drone operator upload assets and cancel from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.SRT
+TC21_Drone operator upload assets and validate srt files message from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.SRT
+TC22_ExternalUser with no access vlaidates links to construction footage,,,,,,,,,,,
+TC23_ExternalUser filter with region,Region,OXAGON,,,,,7/3/2023-8/10/2023,,,,
+TC24_ExternalUser filter with subArea,SubArea,,Port Basin,,,,,,,,
+TC25_ExternalUser filter with deviceID,DeviceID,,,D-OX-0037,,,,,,,
+TC26_ExternalUser filter with deviceType,DeviceType,,,,Drone,,,,,,
+TC27_ExternalUser filter with format,Format,,,,,Picture,,,,,
+TC28_ExternalUser filter with date,DateRange,,,,,,7/3/2023-8/10/2023,,,,
+TC29_External User upload assets .doc from construction footage page,,,,D-OX-0037,,,,7/18/2023,,,Uploads1.doc

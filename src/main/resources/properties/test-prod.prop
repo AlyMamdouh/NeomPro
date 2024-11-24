@@ -1,0 +1,16 @@
+environment = production
+
+browser=chrome
+
+url= https://groundx.neom.com/login
+
+Login_as_an_external_partner_or_vendor_UserName= srikanth.mallela@scryai.com
+
+Login_as_an_external_partner_or_vendor_Password=Simeio@123
+
+DroneOperator_UserName = srikanth.mallela@scryai.com
+DroneOperator_Password = Simeio@123
+
+
+
+
