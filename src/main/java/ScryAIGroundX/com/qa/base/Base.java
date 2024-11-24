@@ -56,8 +56,6 @@ public  class Base {
 
 	Robot robot;
 
-	//public abstract void marina();
-
 	/**
 	 * Initializes a WebDriver instance based on the specified browser and mode.
 	 *
@@ -67,13 +65,17 @@ public  class Base {
 	 *
 	 * @throws IllegalArgumentException if the specified browser is not supported.
 	 */
-	public WebDriver init(String browser, String browserMode) {
-		switch (browser.toLowerCase()) {
+
+	public WebDriver init(String browser, String browserMode)
+	{
+		switch (browser.toLowerCase())
+		{
 			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions chromeOptions = new ChromeOptions();
 				chromeOptions.addArguments("--incognito");
-				if (browserMode.equalsIgnoreCase("headless")) {
+				if (browserMode.equalsIgnoreCase("headless"))
+				{
 					chromeOptions.addArguments("--headless=new");
 				}
 				tlDriver.set(new ChromeDriver(chromeOptions));
@@ -98,45 +100,37 @@ public  class Base {
 		return getDriver();
 	}
 
-	public static synchronized WebDriver getDriver() {
+	public static synchronized WebDriver getDriver()
+	{
 		return tlDriver.get();
 
 	}
 
-	public String getTitle() {
+
+
+
+
+
+
+
+
+
+	// WebPage actions
+	public String getTitle()
+	{
 		waitForPageToLoad();
 		String title = getDriver().getTitle();
 		return title;
 	}
 
-	public void setBrowserZoom() throws AWTException {
+	public void setBrowserZoom() throws AWTException
+	{
 		robot = new Robot();
 		for (int i = 0; i < 1; i++) {
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			robot.keyPress(KeyEvent.VK_MINUS);
 			robot.keyRelease(KeyEvent.VK_CONTROL);
 			robot.keyRelease(KeyEvent.VK_MINUS);
-		}
-	}
-
-	public static void takeScreenshot() throws IOException {
-		File scrFile = ((TakesScreenshot) Base.getDriver()).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile,
-				new File(currentDir + "/test-output/extentReports/screenshots/" + System.currentTimeMillis() + ".png"));
-	}
-
-	public static String getScreenshot() {
-		String screenshotBase64 = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BASE64);
-		return screenshotBase64;
-	}
-
-	public static void addReport() throws IOException {
-		byte[] sourcePath = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
-		try {
-			scenario.attach(sourcePath, "image/png", scenario.getName());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 	}
 
@@ -164,7 +158,72 @@ public  class Base {
 		return getDriver().getCurrentUrl();
 	}
 
-	public void scrollBy(int scroll) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//Screenshots && Reporting
+	public static void takeScreenshot() throws IOException
+	{
+		File scrFile = ((TakesScreenshot) Base.getDriver()).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile,
+				new File(currentDir + "/test-output/extentReports/screenshots/" + System.currentTimeMillis() + ".png"));
+	}
+
+	public static String getScreenshot()
+	{
+		String screenshotBase64 = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BASE64);
+		return screenshotBase64;
+	}
+
+	public static void addReport() throws IOException
+	{
+		byte[] sourcePath = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
+		try {
+			scenario.attach(sourcePath, "image/png", scenario.getName());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//Scrolling
+	//Scroll to bottom of page
+	public void scrollToBottomOfPage() {
+		js.executeScript("window.scrollTo(0, document.body.clientHeight);");
+	}
+
+	//Scroll to top of page
+	public void scrollToTopOfPage() {
+		js.executeScript("window.scrollTo(0, 0)");
+	}
+
+	//Scrolling 1000 MegaPixels
+	public void scrollBy(int scroll)
+	{
 		js.executeScript("window.scrollBy(0,1000)");
 	}
 
@@ -182,33 +241,34 @@ public  class Base {
 		js.executeScript("arguments[0].click();", element);
 	}
 
-	// Scroll to bottom of page
-	public void scrollToBottomOfPage() {
-		js.executeScript("window.scrollTo(0, document.body.clientHeight);");
-	}
 
-	// Scroll to top of page
-	public void scrollToTopOfPage() {
-		js.executeScript("window.scrollTo(0, 0)");
-	}
 
-	// Get single element
-	public void waitVisible(WebElement element) {
+
+
+
+
+
+
+
+
+
+
+
+	// wait for element to be visible
+	public void waitVisible(WebElement element)
+	{
 		WebDriverWait expliciteWait = new WebDriverWait(getDriver(), Duration.ofSeconds(150));
 		expliciteWait.until(ExpectedConditions.visibilityOf(element));
 	}
-	
+
+	// wait for element to be clickable, then click
 	public void waitElementClickable(WebElement element) {
 		WebDriverWait expliciteWait = new WebDriverWait(getDriver(), Duration.ofSeconds(100));
 		expliciteWait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 	}
 
-	public void waitExistsForNestedElements(WebElement element, By subelement) {
-		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
-		wait.until(ExpectedConditions.presenceOfNestedElementLocatedBy(subelement, subelement));
-	}
-
+	// wait for element to be clickable
 	public WebElement waitUntilElementClickable(WebElement element) {
 		try {
 			WebDriverWait expliciteWait = new WebDriverWait(getDriver(), Duration.ofSeconds(70));
@@ -219,12 +279,33 @@ public  class Base {
 		}
 	}
 
+	// wait for sub-element to be visible
+	public void waitExistsForNestedElements(WebElement element, By subelement) {
+		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.presenceOfNestedElementLocatedBy(subelement, subelement));
+	}
+
+	// click on the element using JS
 	public void jsClick(WebElement element) {
-//		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
 		js.executeScript("arguments[0].click();", element);
 	}
 
-	/* Alert Handler */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// Alert Handler
 	public boolean acceptAlert() {
 		try {
 			Alert alert = getDriver().switchTo().alert();
@@ -261,6 +342,21 @@ public  class Base {
 		}
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// Mouse Actions
 	public void mouseHoverOnElement(WebElement element) {
 		Actions hover = new Actions(getDriver());
 		hover.moveToElement(element);
@@ -280,14 +376,17 @@ public  class Base {
 		hover.moveToElement(clickElement).click().perform();
 	}
 
-	public void selectByText(WebElement element, String text) {
-		waitVisible(element);
-		Select select = new Select(element);
-		select.selectByVisibleText(text);
-
+	public void CopyText()
+	{
+		Actions action = new Actions(getDriver());
+		action.keyDown(Keys.CONTROL);
+		action.sendKeys("c");
+		action.keyUp(Keys.CONTROL);
+		action.build().perform();
 	}
 
-	public  void PasteText() {
+	public  void PasteText()
+	{
 		Actions action = new Actions(getDriver());
 		action.keyDown(Keys.CONTROL);
 		action.sendKeys("v");
@@ -296,25 +395,60 @@ public  class Base {
 
 	}
 
+	public void enter(By by)
+	{
+		getDriver().findElement(by).sendKeys(Keys.ENTER);
+	}
 
 
-	// Select By Value from Drop down
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//Selecting from DDL by Text
+	public void selectByText(WebElement element, String text) {
+		waitVisible(element);
+		Select select = new Select(element);
+		select.selectByVisibleText(text);
+
+	}
+
+	//Selecting from DDL by Value
 	public void selectByValue(WebElement element, String value) {
 		waitVisible(element);
 		Select select = new Select(element);
 		select.selectByVisibleText(value);
 	}
 
-	// Select by Index from drop down
+	//Selecting from DDL by Index
 	public void selectByIndex(WebElement element, int index) {
 		waitVisible(element);
 		Select select = new Select(element);
 		select.selectByIndex(index);
 	}
 
-	public void enter(By by) {
-		getDriver().findElement(by).sendKeys(Keys.ENTER);
-	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	public String generateRandonString(String text) {
 		LocalTime currenttime = LocalTime.now();

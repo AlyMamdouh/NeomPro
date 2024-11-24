@@ -10,9 +10,10 @@ import ScryAIGroundX.com.qa.base.Base;
 
 public class GroundXConstructionFootagePage extends Base {
 
-	private WebDriver driver;
+	private final WebDriver driver;
 
-	public GroundXConstructionFootagePage(WebDriver driver) {
+	public GroundXConstructionFootagePage(WebDriver driver)
+	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

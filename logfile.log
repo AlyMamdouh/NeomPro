@@ -8268,3 +8268,37 @@
 2024-10-21 21:28:14,913 INFO  [Logs4j] Application launched successfully 
 2024-10-21 21:28:18,287 INFO  [Logs4j] Login as an external partner or vendor is selected successfully 
 2024-10-21 21:28:18,758 INFO  [Logs4j] User entered username, password and clicked on login 
+2024-11-24 08:04:18,787 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:04:20,886 INFO  [Logs4j] Application Name is displayed successfully 
+2024-11-24 08:04:20,922 INFO  [Logs4j] NEOM user option is displayed successfully 
+2024-11-24 08:04:20,956 INFO  [Logs4j] External user option is displayed successfully 
+2024-11-24 08:04:27,922 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:04:30,031 INFO  [Logs4j] Login as an external partner or vendor is selected successfully 
+2024-11-24 08:04:30,100 INFO  [Logs4j] Forgot password is displayed successfully 
+2024-11-24 08:04:36,110 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:04:44,747 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:04:46,876 INFO  [Logs4j] Login as an external partner or vendor is selected successfully 
+2024-11-24 08:04:47,743 INFO  [Logs4j] User entered username, password and clicked on login 
+2024-11-24 08:04:47,779 INFO  [Logs4j] GroundX dashboard page is page displayed successfully 
+2024-11-24 08:04:48,497 INFO  [Logs4j] User logged in successfully 
+2024-11-24 08:04:49,204 INFO  [Logs4j] Notification button is displayed successfully 
+2024-11-24 08:04:49,284 INFO  [Logs4j] User logo is displayed successfully 
+2024-11-24 08:04:49,807 INFO  [Logs4j] User loggedout successfully 
+2024-11-24 08:07:38,756 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:10:13,225 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:10:40,690 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:10:44,166 INFO  [Logs4j] Application Name is displayed successfully 
+2024-11-24 08:10:44,208 INFO  [Logs4j] NEOM user option is displayed successfully 
+2024-11-24 08:10:44,242 INFO  [Logs4j] External user option is displayed successfully 
+2024-11-24 08:10:50,988 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:10:53,287 INFO  [Logs4j] Login as an external partner or vendor is selected successfully 
+2024-11-24 08:10:53,365 INFO  [Logs4j] Forgot password is displayed successfully 
+2024-11-24 08:10:59,284 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:11:06,940 INFO  [Logs4j] Application launched successfully 
+2024-11-24 08:11:09,019 INFO  [Logs4j] Login as an external partner or vendor is selected successfully 
+2024-11-24 08:11:09,703 INFO  [Logs4j] User entered username, password and clicked on login 
+2024-11-24 08:11:09,728 INFO  [Logs4j] GroundX dashboard page is page displayed successfully 
+2024-11-24 08:11:10,688 INFO  [Logs4j] User logged in successfully 
+2024-11-24 08:11:11,441 INFO  [Logs4j] Notification button is displayed successfully 
+2024-11-24 08:11:11,486 INFO  [Logs4j] User logo is displayed successfully 
+2024-11-24 08:11:11,865 INFO  [Logs4j] User loggedout successfully 

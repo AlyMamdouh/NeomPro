@@ -11,12 +11,9 @@ import org.openqa.selenium.support.PageFactory;
 import ScryAIGroundX.com.qa.util.PropertyReader;
 
 public class GroundXDashboardPage {
-	
-	private WebDriver driver;
-	
-	public GroundXDashboardPage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+
+    public GroundXDashboardPage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath = "//div[@class='searchDiv ng-star-inserted']/form/input")
